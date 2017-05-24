@@ -1,0 +1,40 @@
+body {
+    padding: 80px; /* Hvor langt fra toppen af siden skal indholdet være */
+	font-family: sans-serif; /* Serif srifttype*/
+	background-color:  #f5f5f0; /* Lys grå baggrundsfarve */
+}
+
+h1 {
+	font-size: 40px; /* Størrelse på overskriften */
+
+	
+}
+
+.header {
+	margin: auto; /* Margin rettes automatisk */
+    width: 50%; /* Indholder fylder aldrig mere en 50 af browserens bredde */
+	text-align: center; /* Alt tekst, dropdown-lister og billeder er centreret */
+}
+h2 {
+	font-size: 20px;
+}
+a:link, a:visited { /* beskriver linket "ny søgning"*/
+    
+    color: black; /*farven på teksten er angivet som sort */
+    padding: 14px 25px; /*angiver tekstens placering ift tekstboksen */
+    text-align: center; /*centrer teksten i tekstboksen */
+    text-decoration: none; /* angiver at teksten ikke er stylet */
+    display: inline-block; /*sikrer tekstboksens placering */
+    border: 1px solid black;/* tilføjer en sort kant*/
+	margin-bottom: 5px; /* skaber luft under tekstboksen */
+}
+
+
+a:hover, a:active { /* beskriver linket "ny søgning" når man holder musen over */
+    background-color: black; /* tekstboksens baggrunsfarve bliver sort */
+    color: white; /* tekstfarvenn er hvid*/
+   
+}
+
+
+	

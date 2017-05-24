@@ -1,0 +1,51 @@
+body {
+	margin: auto; /* Margin rettes automatisk */
+    width: 50%; /* Indholdet fylder aldrig mere en 50% af browserens bredde */
+    padding: 80px; /* Hvor langt fra toppen af siden skal indholdet være */
+	text-align: center; /* Alt tekst, dropdown-lister og billeder er centreret */
+	font-family: sans-serif; /* Serif skrifttype*/
+	background-color:  #f5f5f0; /* Lys grå baggrundsfarve */
+}
+
+h1 {
+	font-size: 40px; /* Størrelse på overskriften */
+	
+}
+
+h2 {
+	font-size: 20px; /* Størrelse på overskriften */
+}
+
+
+.dropdownkon {
+	width: 70px; /* Bredde på dropdownlisten */
+}
+
+.dropdownalder {
+	width: 70px; /* Bredde på dropdownlisten */
+}
+
+#search {
+	width:100px; /* Bredde på luppen */
+	height:100px; /* Højde på luppen  */
+	margin-left:110px; /* Bruges til at placere billedet. Giver en margin på 110 px i venstre side. Luppen er centreret (defineret i body), men vi ville gerne have luppen lidt mere ti højre. */
+	
+}
+
+#info {
+	width:30px;	/* Bredde på info ikonet */
+	height:30px; /*  Højde på info ikonet */
+	margin-left:50px; /* Ikonet er som udgangspunkt centreret og ligger sig ved siden af luppen. Margin left definerer at der skal være 50px margin mellem de to elementer.  */
+	
+}
+	
+div {
+    display: none;  /* Vis ingenting når musen ikke er over */
+    text-align: left; /* Teskten skal her stå til venstre */ 
+	margin-top: 15px; 	/* Margin-top gør at der er 15px mellem teksten og elementet ovenover */
+}
+
+#info:hover + div { /* :Hover er en selektor der gør at elementer bliver aktive når man bevæger musen over dem (i dette tilfælde skal teksten vises) */
+    display: block;  /* Teksten bliver vist som en block element (div) som er blevet placeret ovenfor */ 
+}?
+

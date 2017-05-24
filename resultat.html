@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="dk"> <!--angiver sproget på siden som dansk -->
+
+<head>
+
+   <meta charset="UTF-8"><!--character encoding. sikrer at alle browsere kan læse karakter codningen rigtigt-->
+
+  <title>Resultater</title> <!--Angiver sidetitlen som metadata -->
+
+  <link rel="stylesheet" href="css/stylesheet-resultat.css" type="text/css"> <!--link til vores stylesheet-->
+  
+</head>
+
+<body>
+
+	<div class="header"><!--Hjemmesidens navn angives med h1 og Resultater som er sekkundær, med h2-->
+	
+
+
+		<h1>Hvem l&aelig;ser hvad?</h1>
+		<h2>Resultater</h2>
+
+		
+		
+		
+	</div>
+</div>
+
+
+	<a href="index.html"><b> Ny s&oslash;gning</b> </a> <!--Ny-søgningsknap der leder tilbage til forsiden -->
+
+	
+	
+    <div id="result"> <!--id som henter data fra javascriptet -->
+    </div>
+	
+<!--scriptet er placeret i bunden, så det bliver det sidste der bliver uploadet. Således er der ikke ventetid fra start-->
+  <script src="https://openplatform.dbc.dk/v1/dbc_openplatform.min.js"></script><!--javascript der gennem api til open platform henter metadata om bogmaterialerne og blileder af forsiderne-->
+  <script src="recommender.js"></script><!--javascript der via python-program henter data om materiale baseret på køn og alder -->
+  <script>
+recommendations(location.search.slice(1), 'result'); <!-- HVAD SKER DER HER--!>
+  </script>
+</body>
+</html>
